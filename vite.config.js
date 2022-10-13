@@ -2,9 +2,14 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 import manifest from './public/manifest.json';
+import dns from 'dns'
+
+dns.setDefaultResultOrder('verbatim')
 
 // https://vitejs.dev/config/
 export default defineConfig({
+
+  
   plugins: [
     react(),
     VitePWA({
@@ -20,6 +25,10 @@ export default defineConfig({
         sourcemap: true ,
       },
 
+      server: {
+        origin: 'http://127.0.0.1:5173'
+      }
+    
     })
   ]   
 })
