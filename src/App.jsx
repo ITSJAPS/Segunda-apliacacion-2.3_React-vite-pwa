@@ -5,7 +5,7 @@ export default function App() {
     <div>
 
       <a href="https://github.com/ITSJAPS/Segunda-apliacacion-2.3_React-vite-pwa" target="_blank">
-          <img src="../images/logoDragon.png" className="logo" alt="Vite logo" />
+          <img src="../images/f.jpg" className="logo" alt="Vite logo" />
         </a>
       <h1>TITULO PLACOSO JAPS </h1>
       <nav
